@@ -16,7 +16,7 @@ function Navbar() {
     <div>
       <BrowserRouter>
         <div>
-          <nav className="navbar navbar-expand-lg navbar-right navbar-light bg-light">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <ul className="navbar-nav mr-auto">
               <li>
                 <Link to={"/"} className="nav-link">

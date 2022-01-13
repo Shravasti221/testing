@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Statistics from './Stats_Prajwal';
+import background from "../helpers/images/Blueprint.jpg"
 function AboutPage() {
   return (
-    <div>
+    <div   style={{ backgroundImage: `url(${background})` }}>
       
       <div className="Heading ">
           <h1>Astra Statistics (About us page)</h1>

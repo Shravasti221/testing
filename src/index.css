@@ -14,12 +14,9 @@ code {
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap');
 
-* {
-  background-color: #f8f5f5ad;
-  margin: 0;
+/** {
   font-family: "Ubuntu";
-  color: #333;
-}
+}*/
 .Heading {
   padding: 20px;
   align-items: center;
