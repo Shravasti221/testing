@@ -1,0 +1,137 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;200;500;200;700&display=swap');
+
+* {
+  background-color: #000000; 
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+body {
+  margin: 0;
+  background-color: #333;
+  padding-bottom: 300px;
+  padding-top: 200px;
+}
+
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+}
+
+.container > div:nth-of-type(1) {
+  grid-column: 1 / span 2;
+}
+
+.full {
+  margin: 0;
+  color: aliceblue;
+  /* background-color: rgb(0, 0, 0); */
+  /*height: 150vh;
+}
+
+.tier {
+  width: 1000px;
+  height: 200px;
+  text-align: left;
+  float: left;
+  /* z-index: -10; */
+  /*border: white;
+  border-width: 5px;
+  position: fixed;
+  z-index: 3;
+}
+.tier2 {
+  width: 1000px;
+  height: 200px;
+  right: 0px;
+  text-align: right;
+  float: right;
+  /* z-index: -10; */
+  /*border: white;
+  border-width: 5px;
+  position: fixed;
+  z-index: 3;
+}
+.back {
+  position: absolute;
+  /* right: 0px;
+  top: 200px; */
+  /*width: 200px;
+  height: 200px;
+  background-color: rgb(102, 216, 159);
+  z-index: -2;
+  float: right;
+}
+
+.front {
+  position: fixed;
+  /*right: 0px;
+  top: 200px; */
+  /*width: 200px;
+  height: 200px;
+  /* background-color: rgba(255, 255, 255, 0); */
+  /* background-image: url('./images/outline.png'); */
+  /*z-index: 3;
+  float: right;
+}
+
+.front img {
+  width: 200px;
+  height: 200px;
+}
+
+.upblock {
+  position: fixed;
+  width: 220px;
+  height: 210px;
+  /* border-color: rgb(20, 184, 14);
+  border-width: 0.1px; */
+  /*background-color: #333;
+  /* z-index: 2; */
+  /*float: right;
+}
+
+.upblock2 {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 220px;
+  height: 430px;
+  /* border-color: rgb(20, 184, 14);
+  border-width: 0.1px; */
+  /*/*background-color: #333;
+  /* z-index: 2; */
+  /*float: right;
+}
+.downblock {
+  position: fixed;
+  right: "0px";
+  width: 220px;
+  height: 210px;
+  /* border-color: rgb(20, 184, 14);
+  border-width: 0.1px; */
+  /*background-color: #333;
+  /* z-index: 2; */
+  /*float: right;
+}
+
+/* .back,
+.container,
+.downblock,
+.front,
+.full,
+.tier,
+.tier2,
+.upblock,
+.upblock2 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+} */

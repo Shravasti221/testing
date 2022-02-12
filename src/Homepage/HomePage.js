@@ -1,10 +1,14 @@
-import React from 'react';
-import DomainImg from './DomainImage';
-import Videoheader from './Videoheader';
+import React from "react";
+import Domain from "./Domain";
+import Videoheader from "./Videoheader";
 function HomePage() {
   return (
     <div>
-      <Videoheader/>
+      
+      <div>
+        <Videoheader/>
+        <Domain />
+      </div>
     </div>
   );
 }

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-
+import Tier from './Tier.jsx';
 function SponsorshipPage() {
   return (
     <div>
-      <div className="Heading ">
-      <h1>Astra Statistics (About us page)</h1>
-      </div>
+      Sponsorship Page
     </div>
   );
 }

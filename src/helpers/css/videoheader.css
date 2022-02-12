@@ -2,7 +2,7 @@
 
 .videohead{
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   color: aliceblue;
   box-sizing: border-box;
@@ -24,11 +24,10 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -2;
   object-fit: cover;
 }
 
-.navbar {
+/*.navbar {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,9 +36,13 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-} 
+}*/
 
-.text a{
+.video_text {
+  z-index: 0;
+}
+
+.video_text a{
   text-decoration: none;
   color: black;
   background-color: aliceblue;
@@ -50,24 +53,24 @@
   transition: 0.5s;
 }
 
-.text {
+.video_text {
   text-align: center;
   transition: 0.5s;
 }
 
-.text a:hover{
+.video_text a:hover{
   letter-spacing: 4px;
 }
 
-.text:hover{
+.video_text:hover{
   transform: scale(1.2);
 }
 
-.text h2{
+.video_text h2{
   margin: 50px;
 }
 
-.text p{
+.video_text p{
   margin: 50px;
   text-transform: initial;
 }

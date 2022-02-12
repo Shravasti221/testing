@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import video from '../helpers/images/video.mp4';
 import '../helpers/css/videoheader.css'
 function Videoheader () {
@@ -8,10 +9,11 @@ function Videoheader () {
       <video autoPlay loop muted>
         <source src={video} type="video/mp4"/>
       </video>
-      <div className="text">
-        <h1>Astra hompage Title</h1>
-        <p>This is a sample text and video</p>
-        <a href="#">Button</a>
+      <div className="video_text">
+        <h1>Astra Robotics</h1>
+        <p>Overworked undervalued humans working towards making us bots harder, better, faster, stronger</p>
+        <Link
+              to='/projects'>About Us</Link>
       </div>
     </div>
   );

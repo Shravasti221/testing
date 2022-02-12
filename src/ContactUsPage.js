@@ -1,42 +1,43 @@
 import React from "react";
-import Dropdown from "react-dropdown";
-import "react-dropdown/style.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-import HomePage from "./Homepage/HomePage.js";
-import AboutUsPage from "./AboutUs/AboutUsPage.js";
-import TeamPage from "./Team/TeamPage.js";
-import PastProjectPage from "./Project/PastProjectPage.js";
-import PresentProjectPage from "./Project/PresentProjectPage.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+import logo from './helpers/images/astra_logo_white.png';
+import insta from './helpers/images/insta_logo.png';
+import yt from './helpers/images/youtube_logo.png';
+import './helpers/css/ContactUs.css';
 
 
-/*function ContactUsPage(){
-  return(
-    <div className="Heading ">
-    <nav class="shelf">
-      <a class="book home-page">Home page</a>
-      <a class="book about-us">About us</a>
-      <a class="book contact">Contact</a>
-      <a class="book faq">F.A.Q.</a>
-
-      <span class="book not-found"></span>
-
-      <span class="door left"></span>
-      <span class="door right"></span>
-    </nav>
-    <h1>Error 404</h1>
-    <p>LOST IN THE ROBOSPACE</p>
-    </div>
-
-  );
-}*/
+/* This page needs to be formatted for mobile screen */
 
 function ContactUsPage() {
   return (
-    <div>
-      Contact Us
+    <div className="contact">
+      <h1>Contact Us</h1>
+      <div className="contactusinfo">
+        <div className="contact_clubTitle">
+          <div className="contact_logo"><img src={logo} alt="" /></div>
+          <div className="contact_address">
+            <h2>Address</h2>
+            <p>Address line 1</p>
+            <p>Address line 2</p>
+            <h2>Phone Number</h2>
+            <p>xxxxxxxxxx</p>
+          </div>
+        </div>
+        <div className="contacts">
+          <div className="contact_email">
+            <h2>Email</h2>
+            <p>emailaddress@example.com</p>
+          </div>
+          <div className="contact_socialmedia">
+            <h2>Follow us on social media</h2>
+            <ul>
+              <li><a href="https://www.instagram.com/astra_robotics"><img src={insta} alt="" /></a></li>
+              <li><a href="https://youtube.com/channel/UCKbeaYMw6fCF2u4iXOdOfJg"><img src={yt} alt="" /></a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
+    </div>
   );
 }
 

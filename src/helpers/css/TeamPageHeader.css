@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400);
+/*.teamPageHeader {
+  box-sizing: border-box;
+  &:active,
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+html, body {
+ height: 100%;
+ padding: 0;
+ }
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+.teamPageHeader {
+  padding: 0;
+  background-color: #eeeeef;
+  font-family: Montserrat, Helvetica, Times, serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+}
+.teamPageHeader a {
+  color: #555;
+  text-decoration: none;
+}
+.teamPageHeader a:hover {
+  color: #888;
+}
+.teamPageHeader p {
+  margin-bottom: 1.3em;
+}
+/*.teamPageHeader h1, .teamPageHeader h2, .teamPageHeader h3, .teamPageHeader h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.45rem;
+}*/
+.teamPageHeader h1 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.45rem;
+
+  margin-top: 0;
+  font-size: calc(30px + 5vw);
+  /*
+  font-size: 6.853em;
+   Hello stylesheet! */
+  width: 90vw;
+}
+.teamPageHeader {
+  position: relative;
+  height: 55vh;
+  padding: 2.618em 0;
+  text-align: center;
+  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+}
+.teamPageHeader .bold {
+  display: inline-block;
+  font-weight: normal;
+  color: #14151c;
+  will-change: transform;
+}
+.teamPageHeader h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (max-width: 700px) {
+  .teamPageHeader {
+    font-size: 0.625rem;
+  }
+}

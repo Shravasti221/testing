@@ -1,0 +1,52 @@
+.domain{
+    position: relative;
+    top: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.domain_img{
+    border-radius: 50px;
+}
+
+.domain_text {
+    word-wrap: break-word;
+    margin-right: 5%;
+    text-align: center;
+    transition: 0.5s;
+}
+  
+.domain_text a:hover{
+    letter-spacing: 4px;
+}
+
+.domain_text:hover{
+    transform: scale(1.1);
+}
+
+.domain_text h1{
+    margin: 1px;
+    font-weight: bold;
+}
+
+.domain_text p{
+    margin: 20px;
+    font-size: large;
+    text-transform: initial;
+}
+
+.domain_text a{
+    font-size: large;
+    transform: scale(2);
+    text-decoration: none;
+    background-color: rgb(91, 215, 231);
+    color: black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
