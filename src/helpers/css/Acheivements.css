@@ -11,8 +11,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  padding-top: 70%;
-  padding-bottom: 40%;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 

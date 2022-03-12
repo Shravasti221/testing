@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+.contact h2{
+  margin: 0;
+  opacity: 100;
+  color: black;
+}
+
 .contact {
-  /*max-width: 1200px;*/
   font-family: "Quicksand";
   font-size : calc(25px+3vw);
   max-width: 1200px;
+  width: 80%;
   margin: 10px auto;
   background-color: rgba(223, 193, 157, 0.5);
   /*background-color: rgb(82, 67, 50);*/
@@ -16,6 +22,7 @@
 }
 
 .contactusinfo {
+  width: 100%;
   align-items: space-between;
   margin-top: 10px;
   display: flex;
@@ -23,33 +30,37 @@
 }
 
 .contact_clubTitle{
-  display: flex;
+  display: inline-flex;
   padding: 20px;
-  flex-direction: row;
   border-bottom: solid 2px rgb(248, 246, 245);
 }
 
 .contacts{
   padding: 20px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 
 .contact_logo {
-  margin-right: 50px;
+  width: 30%;
+  min-width: 20%;
+  /* margin-right: 50px; */
   align-self: center;
 }
 
 .contact_logo img{
   align-self: center;
+  width: 100%;
   max-width: 250px;
   border-right: solid 2px rgb(240, 239, 239);
 }
 
 .contact_address{
+  width: 60%;
+  height: 30%;
   align-self: center;
   padding: 5px 50px;
-  margin-left: 50px;
+  margin-left: 5%;
 }
 
 .contact_email{

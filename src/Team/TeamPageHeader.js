@@ -34,7 +34,7 @@ class TeamPageHeader extends React.Component {
 
   RandomBackground() {
     let getRandomInt = (min, max) => {
-      return Math.floor(Math.random() * (max - min + 1) + min);
+      return 0/*Math.floor(Math.random() * (max - min + 1) + min);*/
     };
 
     let RandomID = getRandomInt(0, 1),
