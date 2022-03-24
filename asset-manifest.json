@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/testing/static/css/main.7021a129.css",
-    "main.js": "/testing/static/js/main.b18858e2.js",
+    "main.css": "/testing/static/css/main.c578630a.css",
+    "main.js": "/testing/static/js/main.e4d6aa81.js",
     "static/media/video.mp4": "/testing/static/media/video.8e4e1e0b571d97dfbd28.mp4",
-    "static/media/fa-solid-900.ttf": "/testing/static/media/fa-solid-900.79da213423ac0def2058.ttf",
+    "static/media/mars_rover.PNG": "/testing/static/media/mars_rover.8e22aeebb9063be37201.PNG",
+    "static/media/stellus.PNG": "/testing/static/media/stellus.253de20033a93eb531a3.PNG",
     "static/media/Error.png": "/testing/static/media/Error.d4adced02b3b11c6fa83.png",
-    "static/media/fa-brands-400.ttf": "/testing/static/media/fa-brands-400.0a1b701f5563c2288281.ttf",
-    "static/media/fa-solid-900.woff2": "/testing/static/media/fa-solid-900.4896d4b04430cc3dfb06.woff2",
-    "static/media/fa-brands-400.woff2": "/testing/static/media/fa-brands-400.f77bcc98bb7468c8b15a.woff2",
+    "static/media/HAL.PNG": "/testing/static/media/HAL.189290a7b149040d6476.PNG",
+    "static/media/doggo.PNG": "/testing/static/media/doggo.3e0fbfa236bc2c13268a.PNG",
     "static/media/astra_logo_white.png": "/testing/static/media/astra_logo_white.5dda99d8ab812c638f93.png",
-    "static/media/fa-regular-400.ttf": "/testing/static/media/fa-regular-400.15d98c18221c8bcb2334.ttf",
     "static/media/01.png": "/testing/static/media/01.549a08cc5e405c975e49.png",
-    "static/media/fa-regular-400.woff2": "/testing/static/media/fa-regular-400.d79c2ec96ab9ff1161a2.woff2",
+    "static/media/ig_background.jpg": "/testing/static/media/ig_background.11c1067d6e0e4db23840.jpg",
     "static/media/02.png": "/testing/static/media/02.75cd55ed7dc38e086532.png",
     "static/media/insta_logo.png": "/testing/static/media/insta_logo.205549aae2ee8b4e65fb.png",
     "static/media/03.png": "/testing/static/media/03.56c4fd22a9842309619e.png",
-    "static/media/fa-v4compatibility.ttf": "/testing/static/media/fa-v4compatibility.52eba2c567c521b8d58a.ttf",
-    "static/media/fa-v4compatibility.woff2": "/testing/static/media/fa-v4compatibility.3d503f89ccaf1b224aa5.woff2",
+    "static/media/ig.svg": "/testing/static/media/ig.7c6bfe4680b1cacb69d906510226cbf9.svg",
     "index.html": "/testing/index.html",
-    "main.7021a129.css.map": "/testing/static/css/main.7021a129.css.map",
-    "main.b18858e2.js.map": "/testing/static/js/main.b18858e2.js.map"
+    "static/media/yt.svg": "/testing/static/media/yt.63b5654158b0d7a0183bd3faadf2ad14.svg",
+    "static/media/li.svg": "/testing/static/media/li.35e825d0be9371fea9e555f8e3d7af86.svg",
+    "main.c578630a.css.map": "/testing/static/css/main.c578630a.css.map",
+    "main.e4d6aa81.js.map": "/testing/static/js/main.e4d6aa81.js.map"
   },
   "entrypoints": [
-    "static/css/main.7021a129.css",
-    "static/js/main.b18858e2.js"
+    "static/css/main.c578630a.css",
+    "static/js/main.e4d6aa81.js"
   ]
 }
