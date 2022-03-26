@@ -1,12 +1,12 @@
 export const MenuItems = [
   {
     title: 'Past Projects',
-    path: '/pastprojects',
+    path: '/testing/pastprojects',
     cName: 'dropdown-link'
   },
   {
     title: 'Present Projects',
-    path: '/presentprojects',
+    path: '/testing/presentprojects',
     cName: 'dropdown-link'
   },
 ];
