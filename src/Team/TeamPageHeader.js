@@ -4,9 +4,6 @@ class TeamPageHeader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: 0,
-      y: 0,
-      shadow: true,
       colors: [
         {
           background: "#2A2C39",
@@ -23,9 +20,6 @@ class TeamPageHeader extends React.Component {
       text: null,
       bold: null,
     };
-  }
-  _onMouseMove(e) {
-    this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
   }
 
   componentDidMount() {
@@ -49,27 +43,17 @@ class TeamPageHeader extends React.Component {
 
   render() {
     const { normalText, emphasisText } = { ...this.props };
-
-    let [moveX, moveY] = [this.state.x / -100, this.state.y / -120];
-
     let sectionStyle = {
       backgroundColor: this.state.background,
       color: this.state.text,
     };
     let boldStyle = {
-      color: this.state.bold,
-	  shadowOffset: {
-        width: moveX,
-        height: moveY,
-      },
-      shadowOpacity: 1.0,
-      shadowRadius: 60
+      color: this.state.bold
     };
 
     return (
       <section
         className="teamPageHeader"
-        onMouseMove={this._onMouseMove.bind(this)}
         style={sectionStyle}
       >
         <h1 className="middle">

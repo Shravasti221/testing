@@ -3,11 +3,36 @@ import "../helpers/css/tier.css";
 import outline1 from "../helpers/images/01.png";
 import outline2 from "../helpers/images/02.png";
 import outline3 from "../helpers/images/03.png";
-function Tier() {
+
+
+class Tier extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      size1: 30,
+      size2: 30,
+      size3: 30,
+    }
+  }
+  handleScroll(){
+    document.addEventListener('scroll',()=>{
+      let scrollTop = document.documentElement.scrollTop,
+          windowHeight = window.innerHeight,
+          height = document.body.scrollHeight - windowHeight,
+          scrollPercentage = (scrollTop / height);;
+      if(scrollPercentage > 0.2) {
+        let newSize = this.state.size1 + 10;
+        this.setState({
+          size1 : newSize
+        });
+      }
+      
+    });
+  }
+  render(){
   return (
     <>
-      <section classname="sponsorship_tiers">
-        <div className="sponsorship_tiers_back"></div>
+      <section className="sponsorship_tiers">
         <div className="sponsorship_tiers_heading">
           <span>Why sponsor us?</span>
         </div>
@@ -31,8 +56,9 @@ function Tier() {
             architecto labore aperiam adipisci quibusdam qui saepe.
           </p>
         </div>
-        <div class="sponsorship_tiers_parent">
-          <div class="sponsorship_tiers_div1">
+        <div className="sponsorship_tiers_parent">
+        <div className="sponsorship_tiers_back"></div>
+          <div className="sponsorship_tiers_div1">
             {" "}
             <div className="sponsorship_tiers_text">
             <p>
@@ -43,26 +69,11 @@ function Tier() {
             </p>
           </div>
           </div>
-          <div class="sponsorship_tiers_div2">
+          <div className="sponsorship_tiers_div2">
             {" "}
-            <img src={outline1} alt="" class="sponsorship_tiers_img_right" />
+            <img src={outline1} alt="" className="sponsorship_tiers_img_right" />
           </div>
-          <div class="sponsorship_tiers_div3">
-            {" "}
-            <div className="sponsorship_tiers_text">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad
-              voluptatibus quam ipsam porro? Voluptate inventore dolores
-              voluptatibus, ullam, distinctio laboriosam quia iure recusandae
-              eum incidunt nostrum officiis dolor maxime.
-            </p>
-          </div>
-          </div>
-          <div class="sponsorship_tiers_div4">
-            {" "}
-            <img src={outline2} alt="" class="sponsorship_tiers_img_left" />
-          </div>
-          <div class="sponsorship_tiers_div5">
+          <div className="sponsorship_tiers_div3">
             {" "}
             <div className="sponsorship_tiers_text">
             <p>
@@ -73,14 +84,30 @@ function Tier() {
             </p>
           </div>
           </div>
-          <div class="sponsorship_tiers_div6">
+          <div className="sponsorship_tiers_div4">
             {" "}
-            <img src={outline3} alt="" class="sponsorship_tiers_img_right" />
+            <img src={outline2} alt="" className="sponsorship_tiers_img_left" />
+          </div>
+          <div className="sponsorship_tiers_div5">
+            {" "}
+            <div className="sponsorship_tiers_text">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad
+              voluptatibus quam ipsam porro? Voluptate inventore dolores
+              voluptatibus, ullam, distinctio laboriosam quia iure recusandae
+              eum incidunt nostrum officiis dolor maxime.
+            </p>
+          </div>
+          </div>
+          <div className="sponsorship_tiers_div6">
+            {" "}
+            <img src={outline3} alt="" className="sponsorship_tiers_img_right" />
           </div>
         </div>
       </section>
     </>
   );
+}
 }
 export default Tier;
  

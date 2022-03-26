@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import Tier from './Tier.js';
+import TeamPageHeader from '../Team/TeamPageHeader';
+import Tier from './Tier';
+
+const sponsorshipText = {
+  normalText: "Sponsor",
+  emphasisText: "Us",
+};
+
+
+
 function SponsorshipPage() {
   return (
     <div>
-      Sponsorship Page
       <Tier/>
     </div>
   );

@@ -1,8 +1,7 @@
-/*
-*, *:before, *:after {
+/**, *:before, *:after {
     box-sizing: border-box;
   }
-*/  
+ */ 
   
   .wrap {
     max-width: 20em;

@@ -35,11 +35,6 @@ export const teamData = [
     desig1: "Software Lead",
   },
   {
-    img1: "https://i.pinimg.com/564x/f8/9e/80/f89e8057acd1d2d1fcb8505147a68f67.jpg",
-    name1: "Shravasti",
-    desig1: "Software Lead",
-  },
-  {
     img1: "https://i.pinimg.com/564x/35/6c/42/356c42cda77596659b4f1c246e752017.jpg",
     name1: "SHASHANK",
     desig1: "Software Lead",

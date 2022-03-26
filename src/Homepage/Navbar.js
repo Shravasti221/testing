@@ -15,9 +15,6 @@ import FourOhFour from "../FourOhFour";
 
 import AstraLogo from "../helpers/images/astra_logo_white.png";
 
-/* Shrav you made a lot of changes to this page so don't directly add it */
-
-
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -34,28 +31,27 @@ function Navbar() {
   };
 
   const onMouseLeave = () => {
-    /* Ritesh's code. Is it necessary?
     if (window.innerWidth < 960) {
       setDropdown(false);
     } else {
       setDropdown(false);
-    }*/
+    }
     setDropdown(false);
   };
   return (
     <>
       <Router>
         <nav className="navbar">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/testing" className="navbar-logo" onClick={closeMobileMenu}>
             Astra
-            <i className="fab fa-firstdraft" />
+            <i className="fa fa-firstdraft" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className={click ? "fa fa-times" : "fa fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/testing" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
@@ -65,22 +61,22 @@ function Navbar() {
               onMouseLeave={onMouseLeave}
             >
               <Link
-                to="/presentprojects"
+                to="/testing/presentprojects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Projects <i className="fas fa-caret-down" />
+                Projects <i className="fa fa-caret-down" />
               </Link>
               {dropdown && <Dropdown />}
             </li>
             <li className="nav-item">
-              <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/testing/team" className="nav-links" onClick={closeMobileMenu}>
                 Team
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/about-us"
+                to="/testing/about-us"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -89,7 +85,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/contact-us"
+                to="/testing/contact-us"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -102,14 +98,14 @@ function Navbar() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/testing" element={<HomePage />} />
-          <Route exact path="/sponsorship" element={<SponsorshipPage />} />
-          <Route exact   path="/presentprojects" element={<PresentProjectPage />}
+          <Route exact path="/testing/sponsorship" element={<SponsorshipPage />} />
+          <Route exact   path="/testing/presentprojects" element={<PresentProjectPage />}
           />
-          <Route exact path="/pastprojects" element={<PastProjectPage />} />
-          <Route exact path="/team" element={<TeamPageAlt />} />
-          <Route exact path="/contact-us" element={<ContactUsPage />} />
-          <Route exact path="/about-us" element={<AboutUsPage />} />
-          <Route exact path="/404" element={<FourOhFour />} />
+          <Route exact path="/testing/pastprojects" element={<PastProjectPage />} />
+          <Route exact path="/testing/team" element={<TeamPageAlt />} />
+          <Route exact path="/testing/contact-us" element={<ContactUsPage />} />
+          <Route exact path="/testing/about-us" element={<AboutUsPage />} />
+          <Route exact path="/testing/404" element={<FourOhFour />} />
         </Routes>
       </Router>
     </>

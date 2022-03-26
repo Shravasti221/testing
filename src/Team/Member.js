@@ -33,7 +33,7 @@ export const teamData = [
        "name1" : "ADITYA",
        "desig1" : "Software Lead",
        "img2" : "https://i.pinimg.com/564x/f8/9e/80/f89e8057acd1d2d1fcb8505147a68f67.jpg",
-       "name2" : "Sharavasti",
+       "name2" : "",
        "desig2" : "Software Lead",
     },
     {

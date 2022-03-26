@@ -13,7 +13,7 @@ function Videoheader () {
         <h1>Astra Robotics</h1>
         <p>Overworked undervalued humans working towards making us bots harder, better, faster, stronger</p>
         <Link
-              to='/projects'>About Us</Link>
+              to='/testing/presentprojects'>About Us</Link>
       </div>
     </div>
   );

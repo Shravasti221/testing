@@ -1,28 +1,29 @@
 /*large screen*/
 .team_alt_parent {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 10px;
-  /*grid-row-gap: 10px;*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
   width: 95vw;
   margin: auto;
   }
   
-  .team_alt_div1 { grid-area: 1 / 1 / 2 / 3; }
-  .team_alt_div2 { grid-area: 1 / 3 / 2 / 5; }
-  .team_alt_div3 { grid-area: 1 / 5 / 2 / 7; }
-  .team_alt_div4 { grid-area: 2 / 1 / 3 / 3; }
-  .team_alt_div5 { grid-area: 2 / 3 / 3 / 5; }
-  .team_alt_div6 { grid-area: 2 / 5 / 3 / 7; }
-  .team_alt_div7 { grid-area: 3 / 1 / 4 / 3; }
-  .team_alt_div8 { grid-area: 3 / 3 / 4 / 5; }
-  .team_alt_div9 { grid-area: 3 / 5 / 4 / 7; }
-  .team_alt_div10 { grid-area: 4 / 1 / 5 / 3; }
-  .team_alt_div11 { grid-area: 4 / 3 / 5 / 5; }
-  .team_alt_div12 { grid-area: 4 / 5 / 5 / 7; }
-  .team_alt_div13 { grid-area: 5 / 2 / 6 / 4; }
-  .team_alt_div14 { grid-area: 5 / 4 / 6 / 6; }
+    
+    .team_alt_div1 { grid-area: 1 / 1 / 2 / 2; }
+    .team_alt_div2 { grid-area: 1 / 2 / 2 / 3; }
+    .team_alt_div3 { grid-area: 1 / 3 / 2 / 4; }
+    .team_alt_div4 { grid-area: 2 / 1 / 3 / 2; }
+    .team_alt_div5 { grid-area: 2 / 2 / 3 / 3; }
+    .team_alt_div6 { grid-area: 2 / 3 / 3 / 4; }
+    .team_alt_div7 { grid-area: 3 / 1 / 4 / 2; }
+    .team_alt_div8 { grid-area: 3 / 2 / 4 / 3; }
+    .team_alt_div9 { grid-area: 3 / 3 / 4 / 4; }
+    .team_alt_div10 { grid-area: 4 / 1 / 5 / 2; }
+    .team_alt_div11 { grid-area: 4 / 2 / 5 / 3; }
+    .team_alt_div12 { grid-area: 4 / 3 / 5 / 4; }
+    .team_alt_div13 { grid-area: 5 / 2 / 6 / 3; }
+
 
   .team_alt_parent, .team_alt_parent:before, .team_alt_parent:after {
     box-sizing: border-box;
@@ -32,39 +33,40 @@
   @media screen and (max-width: 992px) {  
   .team_alt_parent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
     }
     
-    .team_alt_div1 { grid-area: 1 / 1 / 2 / 2; }
-    .team_alt_div2 { grid-area: 1 / 2 / 2 / 3; }
-    .team_alt_div3 { grid-area: 2 / 1 / 3 / 2; }
-    .team_alt_div4 { grid-area: 2 / 2 / 3 / 3; }
-    .team_alt_div5 { grid-area: 3 / 1 / 4 / 2; }
-    .team_alt_div6 { grid-area: 3 / 2 / 4 / 3; }
-    .team_alt_div7 { grid-area: 4 / 1 / 5 / 2; }
-    .team_alt_div8 { grid-area: 4 / 2 / 5 / 3; }
-    .team_alt_div9 { grid-area: 5 / 1 / 6 / 2; }
-    .team_alt_div10 { grid-area: 5 / 2 / 6 / 3; }
-    .team_alt_div11 { grid-area: 6 / 1 / 7 / 2; }
-    .team_alt_div12 { grid-area: 6 / 2 / 7 / 3; }
-    .team_alt_div13 { grid-area: 7 / 1 / 8 / 2; }
-    .team_alt_div14 { grid-area: 7 / 2 / 8 / 3; }
+    .team_alt_div1 { grid-area: 1 / 1 / 2 / 3; }
+    .team_alt_div2 { grid-area: 1 / 3 / 2 / 5; }
+    .team_alt_div3 { grid-area: 2 / 1 / 3 / 3; }
+    .team_alt_div4 { grid-area: 2 / 3 / 3 / 5; }
+    .team_alt_div5 { grid-area: 3 / 1 / 4 / 3; }
+    .team_alt_div6 { grid-area: 3 / 3 / 4 / 5; }
+    .team_alt_div7 { grid-area: 4 / 1 / 5 / 3; }
+    .team_alt_div8 { grid-area: 4 / 3 / 5 / 5; }
+    .team_alt_div9 { grid-area: 5 / 1 / 6 / 3; }
+    .team_alt_div10 { grid-area: 5 / 3 / 6 / 5; }
+    .team_alt_div11 { grid-area: 6 / 1 / 7 / 3; }
+    .team_alt_div12 { grid-area: 6 / 3 / 7 / 5; }
+    .team_alt_div13 { grid-area: 7 / 2 / 8 / 4; }
+
+
   }
 
-  /*Small Screen*/
+  /*Small Screen not done... Do we put one in each row?*/
   
   .team_alt_wrap {
     position: relative;
     margin: 1em auto;
-    height: 70vh;
-    width: 20vw;
+    /*height: 70vh;
+    width: 20vw;*/
     max-height: 800px;
     max-width: 1280px;
     min-height: 400px;
-    min-width: 280px;
+    min-width: 210px;
     /*display: flex;*/
     justify-content: space-around;
     align-items: center;
@@ -121,7 +123,8 @@
   }
   .team_alt_card figure {
     position: relative;
-    z-index: 299;
+    /*z-index: 299;*/
+    z-index: 10;
     width: 10em;
     height: 10em;
     margin: 0 auto 1em;

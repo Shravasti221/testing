@@ -61,9 +61,6 @@ export default function Team() {
         <div className="team_alt_div13">
         <MemberAlt id={12}/>
         </div>
-        <div className="team_alt_div14">
-        <MemberAlt id={13}/>         
-        </div>
       </div>
     </>
   );
