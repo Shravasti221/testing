@@ -3,9 +3,9 @@ import '../helpers/css/domains.css';
 
 function Domain() {
   const domains = [
-    { title: 'Embedded System', desc: 'This is a sample domain text or description', image: '../helpers/images/Embedded_systems.png', id: 1 },
-    { title: 'Computer Vision', desc: 'This is a sample domain text or description', image: '../helpers/images/computer-vision-illustration.png', id: 2 },
-    { title: 'Control System', desc: 'This is a sample domain text or description', image: '../helpers/images/Control_system_illustration.png', id: 3 },
+    { title: 'Embedded System', desc: 'HelloWorldABC', image: '/images/Embedded_systems.png', id: 1 },
+    { title: 'Computer Vision', desc: 'This is a sample domain text or description', image: '/images/computer-vision-illustration.png', id: 2 },
+    { title: 'Control System', desc: 'This is a sample domain text or description', image: '/images/Control_system_illustration.png', id: 3 },
     { title: 'Domain Title #', desc: 'This is a sample domain text or description', image: '/images/domain_img.jpg', id: 4 },
     { title: 'Domain Title #', desc: 'This is a sample domain text or description', image: '/images/domain_img.jpg', id: 5 },
     { title: 'Domain Title #', desc: 'This is a sample domain text or description', image: '/images/domain_img.jpg', id: 6 },

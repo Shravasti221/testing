@@ -67,7 +67,7 @@ function PastProjectPage() {
   return (
     <>
       <div className="projectslide_parent">
-        <div className="projectslide_div1">
+        <div className="projectslide_div_image">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -85,8 +85,7 @@ function PastProjectPage() {
             ))}
           </Swiper>
         </div>
-        <div className="projectslide_div2">  </div>
-        <div className="projectslide_div3">
+        <div className="projectslide_div_description">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}

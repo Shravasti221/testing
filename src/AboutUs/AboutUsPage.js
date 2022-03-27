@@ -1,6 +1,6 @@
 import React from "react";
 import Statistics from "./Stats_Prajwal";
-import VisionMission from "./VisionMision";
+//import VisionMission from "./VisionMision";
 import TeamPageHeader from "../Team/TeamPageHeader";
 import Grids from "./Acheivements_Nisarga";
 
@@ -40,8 +40,8 @@ function AboutPage() {
           and future relevance in field of robotics and automation.
         </p>
       </div>
-      <div className="vision-mission-astra">
-        <VisionMission />
+      <div className="about-astra">
+        <h1>Our Vision</h1>
         <p>
           We believe robots can make the world a better place to live in.
           Knowledge has no value unless you share it. We conduct various
