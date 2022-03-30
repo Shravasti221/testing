@@ -28,6 +28,7 @@
   padding: 2.618em 0;
   text-align: center;
   text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+  word-wrap: normal;
 }
 .teamPageHeader .bold {
   display: inline-block;
@@ -45,6 +46,6 @@
 @media screen and (max-width: 700px) {
   .teamPageHeader {
     font-size: 0.625rem;
-    width: 97vw;
+    width: 100%;
   }
 }

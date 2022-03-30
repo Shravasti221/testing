@@ -1,17 +1,24 @@
 import "../helpers/css/projects.css";
+import Footer from "../Footer.js";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // import required modules
-import { Keyboard, Pagination, Navigation, Mousewheel } from "swiper";
+import {
+  Keyboard,
+  Pagination,
+  Controller,
+  Autoplay,
+  Navigation,
+  Mousewheel,
+} from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/effect-fade";
-//import "./styles.css";
+import "swiper/css/autoplay";
+//import "swiper/css/navigation";
+//import "swiper/css/effect-fade";
 
 import doggo from "../helpers/images/doggo.PNG";
 import HAL from "../helpers/images/HAL.PNG";
@@ -30,20 +37,20 @@ const paras = [
     title: "Doggo",
     content:
       " We participate every year in The University Rover Challange(URC) which is an annual international competetion hosted by the Mars Society for university and college teams to fabricate a prototype Mars Rover, which will then be subjected to a series of tasks and challenges.The competition pushes the teams to the extreme limits of engineering, management and proactively work towards the motto of the challenge 'Think, Design and Engineer'",
-    id: 7
+    id: 7,
   },
   {
     title: "HAL",
     content:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    id: 8
+    id: 8,
   },
   {
     title: "HAL",
     content:
       " Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
-    id: 9
-  }
+    id: 9,
+  },
 ];
 const Fibonacci = (props) => {
   return (
@@ -64,20 +71,25 @@ const Fibonacci = (props) => {
   );
 };
 
-function PastProjectPage() {
+const PastProjectPage = () => {
+  // store swiper instances
+  const [firstSwiper, setFirstSwiper] = useState(null);
+  const [secondSwiper, setSecondSwiper] = useState(null);
+
   return (
     <>
       <div className="projectslide_parent">
         <div className="projectslide_div_image">
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={20}
             keyboard={{
               enabled: true,
             }}
-            mousewheel={true}
             direction={"vertical"}
-            modules={[Keyboard]}
+            modules={[Controller, Keyboard]}
+            onSwiper={setFirstSwiper}
+            controller={{ control: secondSwiper }}
             className="projectslide_fibonacci_holder"
           >
             {pics.map((pic) => (
@@ -87,35 +99,42 @@ function PastProjectPage() {
             ))}
           </Swiper>
         </div>
-        <div className=".projectslide_div_description">
+
+        <div className="projectslide_div_description">
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={40}
             keyboard={{
               enabled: true,
             }}
             direction={"vertical"}
             mousewheel={true}
             pagination={{
-              clickable: false,
+              clickable: true,
             }}
-            modules={[Keyboard, Pagination]}
+            autoplay={true}
+            modules={[Controller, Keyboard, Pagination, Autoplay]}
+            onSwiper={setSecondSwiper}
+            controller={{ control: firstSwiper }}
             className="projectslide_description"
           >
-            
             {paras.map((para) => (
               <SwiperSlide key={para.id}>
                 <div>
-                <h1>{para.title}</h1>
-                <p>{para.content}</p>
+                  <h1>{para.title}</h1>
+                  <p>{para.content}</p>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
+      <div>
+          <div className="spacer"></div>
+          <Footer />
+      </div>
     </>
   );
-}
+};
 
 export default PastProjectPage;

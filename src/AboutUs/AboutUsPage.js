@@ -3,6 +3,7 @@ import Statistics from "./Stats_Prajwal";
 //import VisionMission from "./VisionMision";
 import TeamPageHeader from "../Team/TeamPageHeader";
 import Grids from "./Acheivements_Nisarga";
+import Footer from "../Footer";
 
 import "../helpers/css/aboutUs.css";
 
@@ -56,6 +57,7 @@ function AboutPage() {
       <div>
         <Grids />
       </div>
+      <Footer/>
     </div>
   );
 }

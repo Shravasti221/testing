@@ -1,6 +1,7 @@
 import React from "react";
+import Footer from "../Footer";
 import "../helpers/css/Team.css";
-import { teamData } from "./Member";
+import MemberAlt from "./Member";
 
 import TeamPageHeader from "./TeamPageHeader";
 
@@ -9,103 +10,60 @@ const teampageText = {
   emphasisText: "Team",
 };
 
-export default function Team() {
-  return (
-    <>
-      <TeamPageHeader {...teampageText} />
+export default function TeamPage() {
+  /*
       <footer className="cred">
         <a href="https://dribbble.com/shots/2134672-Card-animation">
           Inspiration from Alex Cican on Dribble
           <i className="fa fa-share"></i>
         </a>
-      </footer>
-      {teamData.map((data) => {
-        return (
-          <div className="wrap" key={data.id}>
-            <div className="card">
-              <div className="card-liner">
-                <figure>
-                  <img src={data.img1} alt="" />
-                </figure>
-                <div className="card--social">
-                  <ul>
-                    <li className="twitter">
-                      <a href="#0">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li className="linkedin">
-                      <a href="#0">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card--title">
-                  <h3>{data.name1}</h3>
-                  <p>{data.desig1}</p>
-                </div>
-                <div className="card--desc">
-                  <hr />
-                  <p>
-                    Coffee, code, repeat... he doesn't eat food, and only stops
-                    to defend the table tennis crown.
-                  </p>
-                </div>
-                <div className="card--btn">
-                  <a href="#0">
-                    <span className="moreinfo">
-                      <i className="fa fa-info-circle"></i> More Info
-                    </span>
-                    <span className="fullprof">View Full Profile</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="card-liner">
-                <figure>
-                  <img src={data.img2} alt="" />
-                </figure>
-                <div className="card--social">
-                  <ul>
-                    <li className="twitter">
-                      <a href="#0">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li className="linkedin">
-                      <a href="#0">
-                        <i className="fa fa-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="card--title">
-                  <h3>{data.name2}</h3>
-                  <p>{data.desig2}</p>
-                </div>
-                <div className="card--desc">
-                  <hr />
-                  <p>
-                    Coffee, code, repeat... he doesn't eat food, and only stops
-                    to defend the table tennis crown.
-                  </p>
-                </div>
-                <div className="card--btn">
-                  <a href="#0">
-                    <span className="moreinfo">
-                      <i className="fa fa-info-circle"></i> More Info
-                    </span>
-                    <span className="fullprof">View Full Profile</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+      </footer> 
+  */
+  return (
+    <>
+      <TeamPageHeader {...teampageText} />
+      <div className="team_alt_parent">
+        <div className="team_alt_div1">
+         <MemberAlt id={0}/>
+        </div>
+        <div className="team_alt_div2">
+        <MemberAlt id={1}/>
+        </div>
+        <div className="team_alt_div3">
+        <MemberAlt id={2}/>
+        </div>
+        <div className="team_alt_div4">
+        <MemberAlt id={3}/>
+        </div>
+        <div className="team_alt_div5">
+        <MemberAlt id={4}/>
+        </div>
+        <div className="team_alt_div6">
+        <MemberAlt id={5}/>
+        </div>
+        <div className="team_alt_div7">
+        <MemberAlt id={6}/>
+        </div>
+        <div className="team_alt_div8">
+        <MemberAlt id={7}/>
+        </div>
+        <div className="team_alt_div9">
+        <MemberAlt id={8}/>
+        </div>
+        <div className="team_alt_div10">
+        <MemberAlt id={9}/>
+        </div>
+        <div className="team_alt_div11">
+        <MemberAlt id={10}/>
+        </div>
+        <div className="team_alt_div12">
+        <MemberAlt id={11}/>
+        </div>
+        <div className="team_alt_div13">
+        <MemberAlt id={12}/>
+        </div>
+      </div>
+      <Footer/>
     </>
   );
 }

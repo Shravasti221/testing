@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../helpers/css/Navbar.css";
+import "./helpers/css/Navbar.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dropdown from "./Dropdown";
-import HomePage from "./HomePage.js";
-import AboutUsPage from "../AboutUs/AboutUsPage.js";
-import TeamPageAlt from "../Team/TeamPageAlt.js";
-//import TeamPage from "../Team/TeamPage.js";
-import ContactUsPage from "../ContactUsPage.js";
-import PastProjectPage from "../Project/PastProjectPage.js";
-import PresentProjectPage from "../Project/PresentProjectPage.js";
-import SponsorshipPage from "../Sponsorship/SponsorshipPage";
-import FourOhFour from "../FourOhFour";
+import Dropdown from "./Homepage/Dropdown";
+import HomePage from "./Homepage/HomePage.js";
+import AboutUsPage from "./AboutUs/AboutUsPage.js";
+import TeamPage from "./Team/TeamPage.js";
+import ContactUsPage from "./ContactUsPage.js";
+import PastProjectPage from "./Project/PastProjectPage.js";
+import PresentProjectPage from "./Project/PresentProjectPage.js";
+import SponsorshipPage from "./Sponsorship/SponsorshipPage";
+import FourOhFour from "./FourOhFour";
 
-import AstraLogo from "../helpers/images/astra_logo_white.png";
+import AstraLogo from "./helpers/images/astra_logo_white.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -102,7 +101,7 @@ function Navbar() {
           <Route exact   path="/testing/presentprojects" element={<PresentProjectPage />}
           />
           <Route exact path="/testing/pastprojects" element={<PastProjectPage />} />
-          <Route exact path="/testing/team" element={<TeamPageAlt />} />
+          <Route exact path="/testing/team" element={<TeamPage />} />
           <Route exact path="/testing/contact-us" element={<ContactUsPage />} />
           <Route exact path="/testing/about-us" element={<AboutUsPage />} />
           <Route exact path="/testing/404" element={<FourOhFour />} />
