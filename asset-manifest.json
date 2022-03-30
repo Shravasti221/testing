@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/testing/static/css/main.4fd6fe5e.css",
-    "main.js": "/testing/static/js/main.bebc32b3.js",
+    "main.css": "/testing/static/css/main.006f1e5e.css",
+    "main.js": "/testing/static/js/main.eb1bf85d.js",
     "static/media/video.mp4": "/testing/static/media/video.8e4e1e0b571d97dfbd28.mp4",
     "static/media/mars_rover.PNG": "/testing/static/media/mars_rover.8e22aeebb9063be37201.PNG",
+    "static/media/cutee.gif": "/testing/static/media/cutee.d7036dcacaa80001c592.gif",
+    "static/media/domain_img.jpg": "/testing/static/media/domain_img.f34a49ea80bb2aaf3bb8.jpg",
     "static/media/stellus.PNG": "/testing/static/media/stellus.253de20033a93eb531a3.PNG",
     "static/media/Error.png": "/testing/static/media/Error.d4adced02b3b11c6fa83.png",
     "static/media/HAL.PNG": "/testing/static/media/HAL.189290a7b149040d6476.PNG",
+    "static/media/sponsor.gif": "/testing/static/media/sponsor.c3860e7c3552253404e2.gif",
     "static/media/doggo.PNG": "/testing/static/media/doggo.3e0fbfa236bc2c13268a.PNG",
     "static/media/astra_logo_white.png": "/testing/static/media/astra_logo_white.5dda99d8ab812c638f93.png",
+    "static/media/1.png": "/testing/static/media/1.1b14abd843e7e3bb4acc.png",
     "static/media/01.png": "/testing/static/media/01.549a08cc5e405c975e49.png",
+    "static/media/3.png": "/testing/static/media/3.69af7a84f67001eca807.png",
+    "static/media/Embedded_systems.png": "/testing/static/media/Embedded_systems.fda48c63ebce718116d1.png",
+    "static/media/2.png": "/testing/static/media/2.5cddebf2bed2fa32c438.png",
+    "static/media/Control_system_illustration.png": "/testing/static/media/Control_system_illustration.aef380aab7a92a3cb591.png",
+    "static/media/computer-vision-illustration.png": "/testing/static/media/computer-vision-illustration.dc4721b669734f0f4538.png",
     "static/media/ig_background.jpg": "/testing/static/media/ig_background.11c1067d6e0e4db23840.jpg",
     "static/media/02.png": "/testing/static/media/02.75cd55ed7dc38e086532.png",
     "static/media/insta_logo.png": "/testing/static/media/insta_logo.205549aae2ee8b4e65fb.png",
@@ -18,11 +27,11 @@
     "index.html": "/testing/index.html",
     "static/media/yt.svg": "/testing/static/media/yt.63b5654158b0d7a0183bd3faadf2ad14.svg",
     "static/media/li.svg": "/testing/static/media/li.35e825d0be9371fea9e555f8e3d7af86.svg",
-    "main.4fd6fe5e.css.map": "/testing/static/css/main.4fd6fe5e.css.map",
-    "main.bebc32b3.js.map": "/testing/static/js/main.bebc32b3.js.map"
+    "main.006f1e5e.css.map": "/testing/static/css/main.006f1e5e.css.map",
+    "main.eb1bf85d.js.map": "/testing/static/js/main.eb1bf85d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fd6fe5e.css",
-    "static/js/main.bebc32b3.js"
+    "static/css/main.006f1e5e.css",
+    "static/js/main.eb1bf85d.js"
   ]
 }
