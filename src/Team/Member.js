@@ -66,14 +66,14 @@ export const teamData = [
   },
 ];
 
-export default function MemberAlt(props) {
+export default function Member(props) {
   const data = teamData[props.id];
   return (
     <div className="team_alt_wrap">
       <div className="team_alt_card">
         <div className="team_alt_card-liner">
           <figure>
-            <img src={data.img1} alt="" />
+            <img src={data.img1} alt="Member Image" />
           </figure>
           <div className="team_alt_card--social">
             <ul>

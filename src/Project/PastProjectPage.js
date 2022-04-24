@@ -1,4 +1,4 @@
-import "../helpers/css/projects.css";
+//import "../helpers/css/projectsAlt.css";
 import Footer from '../Footer.js';
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -43,6 +43,7 @@ const paras = [
     id: 9
   }
 ];
+
 const Fibonacci = (props) => {
   return (
     <div
@@ -65,7 +66,8 @@ const Fibonacci = (props) => {
 function PastProjectPage() {
   // store swiper instances
   const [firstSwiper, setFirstSwiper] = useState(null);
-  const [secondSwiper, setSecondSwiper] = useState(null);
+  const [controlledSwiper, setControlledSwiper] = useState(null);
+  const [thirdSwiper, setThirdSwiper] = useState(null);
 
   return (
     <>
@@ -73,14 +75,14 @@ function PastProjectPage() {
         <div className="projectslide_div_image">
           <Swiper
             slidesPerView={1}
-            spaceBetween={20}
+            spaceBetween={100}
             keyboard={{
-              enabled: true,
+              enabled: false,
             }}
             direction={"vertical"}
-            modules={[Controller, Keyboard]}
+            modules={[Controller,]}
             onSwiper={setFirstSwiper}
-            controller={{ control: secondSwiper }}
+            controller={{control: [thirdSwiper, controlledSwiper, thirdSwiper]}}
             className="projectslide_fibonacci_holder"
           >
             {pics.map((pic) => (
@@ -91,10 +93,25 @@ function PastProjectPage() {
           </Swiper>
         </div>
 
+        <div className="projectslide_div_title">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={500}
+            direction={"vertical"}
+            modules={[Controller, Pagination]}
+            onSwiper={setControlledSwiper}
+            className="projectslide_div_description"
+          >
+            {headers.map((para) => (
+              <SwiperSlide key={para.id}>{para.title}</SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
         <div className="projectslide_div_description">
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={50}
             keyboard={{
               enabled: true,
             }}
@@ -103,10 +120,11 @@ function PastProjectPage() {
             pagination={{
               clickable: true,
             }}
+            
             autoplay={true}
             modules={[Controller, Keyboard, Pagination, Autoplay]}
-            onSwiper={setSecondSwiper}
-            controller={{ control: firstSwiper }}
+            onSwiper={setThirdSwiper}
+            controller={{control: [firstSwiper, controlledSwiper, firstSwiper] }}
             className="projectslide_description"
           >
             {paras.map((para) => (
@@ -119,9 +137,10 @@ function PastProjectPage() {
             ))}
           </Swiper>
         </div>
-        
-        <div className='spacer'/>
-        <Footer/>
+      </div>
+      <div>
+          <div className="spacer"></div>
+          <Footer />
       </div>
     </>
   );

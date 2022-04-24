@@ -29,19 +29,22 @@ function Navbar() {
     }
   };
 
-  const onMouseLeave = () => {
+  const openDropdown_mobileMode = () => {
+    /*on click open dropdown only in mobile mode*/
     if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
+      setDropdown(true);
     }
+  };
+
+  const onMouseLeave = () => {
     setDropdown(false);
   };
   return (
     <>
       <Router>
         <nav className="navbar">
-          <Link to="/testing" className="navbar-logo" onClick={closeMobileMenu}>
+        <img src={AstraLogo} alt="" width={55} height={50} />
+          <Link to="/testing" className="navbar-name" onClick={closeMobileMenu}>
             Astra
             <i className="fa fa-firstdraft" />
           </Link>
@@ -50,29 +53,54 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/testing" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/testing"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Home
               </Link>
             </li>
             <li
-              className="nav-item"
+              className="nav-item hide-on-mobile"
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
             >
+              <p className="nav-links" onClick={openDropdown_mobileMode}>
+                Projects <i className="fa fa-caret-down" />
+                
+            <li>{dropdown && <Dropdown />}</li>
+              </p>
+            </li>
+            <li className="nav-item show-on-mobile">
               <Link
                 to="/testing/presentprojects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Projects <i className="fa fa-caret-down" />
+                Present Projects
               </Link>
-              {dropdown && <Dropdown />}
             </li>
+            <li className="nav-item show-on-mobile">
+              <Link
+                to="/testing/pastprojects"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Past Projects
+              </Link>
+            </li>
+
             <li className="nav-item">
-              <Link to="/testing/team" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/testing/team"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Team
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
                 to="/testing/about-us"
@@ -80,6 +108,15 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="testing/sponsorship"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Sponsorships
               </Link>
             </li>
             <li className="nav-item">
@@ -93,14 +130,24 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/testing" element={<HomePage />} />
-          <Route exact path="/testing/sponsorship" element={<SponsorshipPage />} />
-          <Route exact   path="/testing/presentprojects" element={<PresentProjectPage />}
+          <Route
+            exact
+            path="/testing/sponsorship"
+            element={<SponsorshipPage />}
           />
-          <Route exact path="/testing/pastprojects" element={<PastProjectPage />} />
+          <Route
+            exact
+            path="/testing/presentprojects"
+            element={<PresentProjectPage />}
+          />
+          <Route
+            exact
+            path="/testing/pastprojects"
+            element={<PastProjectPage />}
+          />
           <Route exact path="/testing/team" element={<TeamPage />} />
           <Route exact path="/testing/contact-us" element={<ContactUsPage />} />
           <Route exact path="/testing/about-us" element={<AboutUsPage />} />

@@ -1,0 +1,197 @@
+/*Assuming 9:6 images*/
+.projectslide_parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.fibonacci_parent {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  /*grid-column-gap: 1vw;
+  grid-row-gap: 1vw;*/
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.fibonacci_parent div {
+  z-index:1;
+  border: 0.2vw solid;
+  padding: 0.1vh;
+  border-color: #ffff;
+  transition: border 1s;
+}
+
+.fibonacci_parent{
+  transition: border 1s;
+}
+.fibonacci_parent:hover div {
+  border: 0vh;
+  padding: 0;
+  transition: border 1s;
+}
+
+.fibonacci_div1 {
+  grid-area: 1 / 1 / 9 / 17;
+}
+.fibonacci_div2 {
+  grid-area: 9 / 9 / 17 / 17;
+}
+.fibonacci_div3 {
+  grid-area: 9 / 1 / 13 / 9;
+}
+.fibonacci_div4 {
+  grid-area: 13 / 5 / 17 / 9;
+}
+.fibonacci_div5 {
+  grid-area: 13 / 1 / 15 / 5;
+}
+.fibonacci_div6 {
+  grid-area: 15 / 3 / 17 / 5;
+}
+.fibonacci_div7 {
+  grid-area: 15 / 1 / 17 / 3;
+}
+.projectslide_div_description .swiper {
+  position: relative;
+  width: 90%;
+  height: 70vh;
+  min-height: 100px;
+  background: transparent;
+}
+
+.projectslide_div_image .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+.projectslide_div_description .swiper-slide {
+  font-size: calc(1vh + 1vw);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items:flex-end;
+}
+
+.projectslide_fibonacci_holder {
+  width: calc(60vh + 20vw);
+  height: calc(40vh + 13vw);
+  /*margin-top: calc((85vh - (40vh + 13vw)) / 2)*/;
+}
+.projectslide_description h1 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  padding-left: 2vw;
+}
+
+.projectslide_description p {
+  font-family: "Gideon Roman", cursive;
+  font-size:medium;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+.projectslide_header_holder {
+  margin-bottom: 0;
+}
+
+.projectslide_description {
+  margin-top: 0;
+}
+
+@media (max-width: 960px) {
+  .projectslide_parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 0px;
+    height: auto;
+    width: auto;
+  }
+  
+  .projectslide_div_description {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0;
+    padding: 0;
+    height: calc(50vh - 3vw);;
+  }
+
+  .projectslide_div_image {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .fibonacci_parent div {
+    border: 2.25px solid;
+    border-color: #ffff;
+  }
+
+  .projectslide_div_image .swiper {
+    position: relative;
+    width: 90vw;
+    height: 60vw;
+    background: transparent;
+  }
+
+  .projectslide_fibonacci_holder{
+    width: 100%;
+    height: 100%;
+    margin:0;
+  }
+
+  .projectslide_div_description .swiper {
+    position: relative;
+    width: 100%;
+    height: calc(50vh - 3vw);
+    min-height:250px;
+    background: transparent;
+    font-size: auto;
+  }
+
+  .projectslide_div_description .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items:center;
+  }
+
+  .projectslide_parent p {
+    width: 85vw;
+  }
+
+}

@@ -108,6 +108,10 @@
 .social-menu ul li:nth-child(3) a:hover {
   background-color: #cd201f;
 }
+.contactus_info p a{
+  text-decoration: none;
+  color:black;
+}
 
 @media screen and (min-width: 700px) {
   /*for large screen*/

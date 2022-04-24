@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer";
 import "../helpers/css/Team.css";
-import MemberAlt from "./Member";
+import Member from "./Member";
 
 import TeamPageHeader from "./TeamPageHeader";
 
@@ -24,43 +24,43 @@ export default function TeamPage() {
       <TeamPageHeader {...teampageText} />
       <div className="team_alt_parent">
         <div className="team_alt_div1">
-         <MemberAlt id={0}/>
+         <Member id={0}/>
         </div>
         <div className="team_alt_div2">
-        <MemberAlt id={1}/>
+        <Member id={1}/>
         </div>
         <div className="team_alt_div3">
-        <MemberAlt id={2}/>
+        <Member id={2}/>
         </div>
         <div className="team_alt_div4">
-        <MemberAlt id={3}/>
+        <Member id={3}/>
         </div>
         <div className="team_alt_div5">
-        <MemberAlt id={4}/>
+        <Member id={4}/>
         </div>
         <div className="team_alt_div6">
-        <MemberAlt id={5}/>
+        <Member id={5}/>
         </div>
         <div className="team_alt_div7">
-        <MemberAlt id={6}/>
+        <Member id={6}/>
         </div>
         <div className="team_alt_div8">
-        <MemberAlt id={7}/>
+        <Member id={7}/>
         </div>
         <div className="team_alt_div9">
-        <MemberAlt id={8}/>
+        <Member id={8}/>
         </div>
         <div className="team_alt_div10">
-        <MemberAlt id={9}/>
+        <Member id={9}/>
         </div>
         <div className="team_alt_div11">
-        <MemberAlt id={10}/>
+        <Member id={10}/>
         </div>
         <div className="team_alt_div12">
-        <MemberAlt id={11}/>
+        <Member id={11}/>
         </div>
         <div className="team_alt_div13">
-        <MemberAlt id={12}/>
+        <Member id={12}/>
         </div>
       </div>
       <Footer/>

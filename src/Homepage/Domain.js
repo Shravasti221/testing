@@ -4,7 +4,7 @@ import domain from "../helpers/images/domain_img.jpg"
 import domain1 from "../helpers/images/Embedded_systems.png"
 import domain2 from "../helpers/images/computer-vision-illustration.png"
 import domain3 from "../helpers/images/Control_system_illustration.png"
-
+import Footer from "../Footer";
 function Domain() {
   const domains = [
     { title: 'Embedded System', desc: 'This is a sample domain text or description', image: domain1, id: 1 },
@@ -23,10 +23,12 @@ function Domain() {
             {/* <a href="#">Button</a> */}
           </div>
           <div className="domain_img">
-            <img src={domain.image} alt="" />
+            <img src={domain.image} alt="domain image" />
           </div>
+
         </div>
       ))}
+      <Footer/>
     </div>
   );
 }

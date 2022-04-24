@@ -52,6 +52,7 @@ const paras = [
     id: 9,
   },
 ];
+
 const Fibonacci = (props) => {
   return (
     <div
@@ -71,10 +72,11 @@ const Fibonacci = (props) => {
   );
 };
 
-const PastProjectPage = () => {
+function PresentProjectPage() {
   // store swiper instances
   const [firstSwiper, setFirstSwiper] = useState(null);
-  const [secondSwiper, setSecondSwiper] = useState(null);
+  const [controlledSwiper, setControlledSwiper] = useState(null);
+  const [thirdSwiper, setThirdSwiper] = useState(null);
 
   return (
     <>
@@ -82,14 +84,14 @@ const PastProjectPage = () => {
         <div className="projectslide_div_image">
           <Swiper
             slidesPerView={1}
-            spaceBetween={20}
+            spaceBetween={100}
             keyboard={{
-              enabled: true,
+              enabled: false,
             }}
             direction={"vertical"}
-            modules={[Controller, Keyboard]}
+            modules={[Controller,]}
             onSwiper={setFirstSwiper}
-            controller={{ control: secondSwiper }}
+            controller={{control: [thirdSwiper, controlledSwiper, thirdSwiper]}}
             className="projectslide_fibonacci_holder"
           >
             {pics.map((pic) => (
@@ -100,10 +102,25 @@ const PastProjectPage = () => {
           </Swiper>
         </div>
 
+        <div className="projectslide_div_title">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={500}
+            direction={"vertical"}
+            modules={[Controller, Pagination]}
+            onSwiper={setControlledSwiper}
+            className="projectslide_div_description"
+          >
+            {headers.map((para) => (
+              <SwiperSlide key={para.id}>{para.title}</SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
         <div className="projectslide_div_description">
           <Swiper
             slidesPerView={1}
-            spaceBetween={40}
+            spaceBetween={50}
             keyboard={{
               enabled: true,
             }}
@@ -112,17 +129,18 @@ const PastProjectPage = () => {
             pagination={{
               clickable: true,
             }}
+            
             autoplay={true}
             modules={[Controller, Keyboard, Pagination, Autoplay]}
-            onSwiper={setSecondSwiper}
-            controller={{ control: firstSwiper }}
+            onSwiper={setThirdSwiper}
+            controller={{control: [firstSwiper, controlledSwiper, firstSwiper] }}
             className="projectslide_description"
           >
             {paras.map((para) => (
               <SwiperSlide key={para.id}>
                 <div>
-                  <h1>{para.title}</h1>
-                  <p>{para.content}</p>
+                <h1>{para.title}</h1>
+                <p>{para.content}</p>
                 </div>
               </SwiperSlide>
             ))}
@@ -137,4 +155,5 @@ const PastProjectPage = () => {
   );
 };
 
-export default PastProjectPage;
+
+export default PresentProjectPage;

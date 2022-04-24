@@ -74,6 +74,8 @@ class Tier extends React.Component {
           {/* <div id="bck">
             <div className="back" />
           </div> */}
+          <div className="tier-container">
+          <div className="back"></div>
           <div className="sponsorship-tiers" id="sponsorship-container">
             <div className="extra1">
               <img src={gif} alt="" className="" width={150} height={200} />
@@ -90,7 +92,7 @@ class Tier extends React.Component {
               </p>
             </div>
             <div className="image1">
-              <img src={o1} alt="one" className="" height={200} width={200} />
+              <img src={o1} alt="Tier One" className="" height={200} width={200} />
             </div>
             <div className="text2">
               <p className="sponsorship-tier-number">Tier 2</p>
@@ -102,7 +104,7 @@ class Tier extends React.Component {
               </p>
             </div>
             <div className="image2">
-              <img src={o2} alt="one" className="" height={200} width={200} />
+              <img src={o2} alt="Tier Two" className="" height={200} width={200} />
             </div>
             <div className="text3">
               <p className="sponsorship-tier-number">Tier 3</p>
@@ -114,9 +116,10 @@ class Tier extends React.Component {
               </p>
             </div>
             <div className="image3">
-              <img src={o3} alt="one" className="" height={200} width={200} />
+              <img src={o3} alt="Tier Three" className="" height={200} width={200} />
             </div>
-            <div className="extra2"></div>
+          </div>
+          <div className="extra2"></div>
           </div>
         </>
       </>

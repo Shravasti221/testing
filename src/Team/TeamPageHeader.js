@@ -1,3 +1,4 @@
+import { removeData } from "jquery";
 import React from "react";
 import "../helpers/css/TeamPageHeader.css";
 class TeamPageHeader extends React.Component {

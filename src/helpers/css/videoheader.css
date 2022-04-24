@@ -58,12 +58,18 @@
   transition: 0.5s;
 }
 
-.video_text a:hover{
-  letter-spacing: 4px;
+.video_text:hover{
+  transform: scale(1.1);
+}
+.video_text h1{
+  transition:0.5s;
+}
+.video_text:hover h1{
+  transform: scale(1.3);
 }
 
-.video_text:hover{
-  transform: scale(1.2);
+.video_text a:hover{
+  letter-spacing: 4px;
 }
 
 .video_text h2{
