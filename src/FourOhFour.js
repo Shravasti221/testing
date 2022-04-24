@@ -10,8 +10,6 @@ function FourOhFour() {
         <img className="error" src={error} alt="error" />
       </div>
       <div className="textlink-404">
-        {/* <span className="text">Hop on to!</span> */}
-        {/*can you rename .btn-primary className to something else*/}
         <Link to='/' className="btn-primary">    
           Home
         </Link>

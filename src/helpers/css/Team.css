@@ -1,5 +1,5 @@
 /*large screen and medium screen */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 540px){
 .team_alt_parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -297,7 +297,7 @@
 }
 
 /* Small Screens */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 540px){
 
   .team_alt_parent {
       display: grid;
@@ -326,10 +326,10 @@
   .team_alt_wrap {
     position: relative;
     width: 90%;
-    margin:10px auto;
+    margin:auto;
   }
   .team_alt_card {
-    width: 100%;
+    width: 98%;
     height: auto;
     min-height: 75px;
     padding: 8px;
@@ -383,8 +383,8 @@
   figure img {
     border-radius: 50%;
     display:flex;
-    min-height: 95px;
-    min-width:75px;
+    min-height: 90px;
+    min-width:70px;
     height: 30vw;
     width:25vw;
   }

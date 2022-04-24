@@ -28,6 +28,12 @@ export const Column = styled.div`
   flex-direction: column;
   text-align: left;
   margin-left: 5px;
+  margin-left:5vw;
+  @media (max-width: 540px) {
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
 `;
 
 export const Row = styled.div`
@@ -66,6 +72,11 @@ export const Heading = styled.p`
   color: #fff;
   margin-bottom: 40px;
   font-weight: 10;
+  @media (max-width: 540px) {
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
 `;
 
 export const FooterIconRow = styled.div`

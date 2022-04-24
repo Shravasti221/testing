@@ -27,8 +27,7 @@ const Footer = () => {
                   to="/testing"
                   style={{ color: "#ffe6e6" }}
                   onClick={window.scrollTo(0, 0)}
-                >
-                  Home
+                >Home
                 </Link>
               </FooterLink>
               <FooterLink>
@@ -36,8 +35,7 @@ const Footer = () => {
                   to="/testing/about-us"
                   style={{ color: "#ffe6e6" }}
                   onClick={window.scrollTo(0, 0)}
-                >
-                  About Us
+                >About Us
                 </Link>
               </FooterLink>
               <FooterLink>
@@ -45,8 +43,7 @@ const Footer = () => {
                   to="/testing/presentprojects"
                   style={{ color: "#ffe6e6" }}
                   onClick={window.scrollTo(0, 0)}
-                >
-                  Present Projects
+                >Present Projects
                 </Link>
               </FooterLink>
               <FooterLink>
@@ -54,8 +51,7 @@ const Footer = () => {
                   to="/testing/pastprojects"
                   style={{ color: "#ffe6e6" }}
                   onClick={window.scrollTo(0, 0)}
-                >
-                  Past Projects
+                >Past Projects
                 </Link>
               </FooterLink>
               <FooterLink>
@@ -63,8 +59,7 @@ const Footer = () => {
                   to="/testing/sponsorship"
                   style={{ color: "#ffe6e6" }}
                   onClick={window.scrollTo(0, 0)}
-                >
-                  Sponsorship
+                >Sponsorship
                 </Link>
               </FooterLink>
               <FooterLink>
