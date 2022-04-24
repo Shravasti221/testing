@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/testing/static/css/main.e0f32f9e.css",
-    "main.js": "/testing/static/js/main.4e665386.js",
+    "main.js": "/testing/static/js/main.9e1ac3f6.js",
     "static/media/video.mp4": "/testing/static/media/video.8e4e1e0b571d97dfbd28.mp4",
     "static/media/mars_rover.PNG": "/testing/static/media/mars_rover.8e22aeebb9063be37201.PNG",
     "static/media/cutee.gif": "/testing/static/media/cutee.d7036dcacaa80001c592.gif",
@@ -29,10 +29,10 @@
     "static/media/yt.svg": "/testing/static/media/yt.63b5654158b0d7a0183bd3faadf2ad14.svg",
     "static/media/li.svg": "/testing/static/media/li.35e825d0be9371fea9e555f8e3d7af86.svg",
     "main.e0f32f9e.css.map": "/testing/static/css/main.e0f32f9e.css.map",
-    "main.4e665386.js.map": "/testing/static/js/main.4e665386.js.map"
+    "main.9e1ac3f6.js.map": "/testing/static/js/main.9e1ac3f6.js.map"
   },
   "entrypoints": [
     "static/css/main.e0f32f9e.css",
-    "static/js/main.4e665386.js"
+    "static/js/main.9e1ac3f6.js"
   ]
 }
